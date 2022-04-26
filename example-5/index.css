@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  border: 0px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: rgb(30, 80, 209);
+  color: white;
+}
+
+.menu-button {
+  position: relative;
+}
+
+.menu-button > ul {
+  display: none;
+}
+
+.menu-button:hover > ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.dropdown {
+  background-color: white;
+  color: rgb(60, 60, 60);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 100px;
+}
+
+.dropdown > .dropdown-item {
+  padding: 10px 5px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid rgb(186, 186, 186);
+  margin-top: -1px;
+}
+
+.dropdown > .dropdown-item:hover {
+  background-color: rgb(10, 97, 151);
+  color: white;
+}

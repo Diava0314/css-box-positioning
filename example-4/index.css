@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: palevioletred;
+  padding: 20px;
+}
+
+.text-container {
+  background-color: antiquewhite;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.tooltip-container {
+  cursor: pointer;
+  color: green;
+  font-weight: bold;
+  position: relative;
+}
+
+.tooltip-container > .tooltip {
+  display: none;
+}
+
+.tooltip-container:hover > .tooltip {
+  border: 1px solid black;
+  background-color: white;
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  left: 6px;
+  width: 200px;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 7px;
+}

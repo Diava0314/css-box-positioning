@@ -1,0 +1,31 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: palevioletred;
+}
+
+.caja-1 {
+  position: relative;
+  border: 3px solid greenyellow;
+  width: 300px;
+  height: 300px;
+  background-color: antiquewhite;
+}
+
+.caja-1 > div:nth-child(1) {
+  border: 3px solid purple;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 100px;
+}
+.caja-1 > div:nth-child(2) {
+  border: 3px solid brown;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 150px;
+}
