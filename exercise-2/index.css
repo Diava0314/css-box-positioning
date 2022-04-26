@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 1430px;
+  height: 620px;
+  padding: 10px;
+  justify-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(54, 54, 54);
+}
+
+.card {
+  display: grid;
+  width: 444px;
+  height: 565px;
+  grid-template-rows: 2fr 140px;
+  box-shadow: 9px 13px 15px -7px rgba(0, 0, 0, 0.51);
+  border-radius: 7px;
+}
+
+.card > div:nth-child(1) {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 300px;
+}
+
+.card > div:nth-child(2) {
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: white;
+  font-size: 60px;
+}
+
+.card.card-blue > div:nth-child(1) {
+  background-color: #5bc0de;
+}
+
+.card.card-yellow > div:nth-child(1) {
+  background-color: #f1c954;
+}
+
+.card.card-green > div:nth-child(1) {
+  background-color: #0e9d57;
+}
+
+.white-text {
+  color: white;
+}
+
+.card.card-blue {
+  position: relative;
+}
+
+button {
+  position: absolute;
+  bottom: 120px;
+  right: 15px;
+  font-size: 40px;
+  border-radius: 100%;
+  line-height: 15px;
+  border-style: none;
+  padding: 15px;
+  color: white;
+  background-color: rgb(38, 83, 150);
+}
